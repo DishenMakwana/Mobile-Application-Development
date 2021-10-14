@@ -1,0 +1,2 @@
+rootProject.name = "Listview"
+include ':app'
