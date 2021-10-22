@@ -1,0 +1,48 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.corp.srihari.deca.PreferenceCategoryClass
+        android:title="General">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/preferenceTransition"
+            android:entryValues="@android:array/emailAddressTypes"
+            android:key="list_preference_1"
+            android:title="Transition Time" />
+    </com.corp.srihari.deca.PreferenceCategoryClass>
+
+    <com.corp.srihari.deca.PreferenceCategoryClass
+        android:title="Support"
+        >
+        <Preference
+            android:title="Help"
+            android:selectable="true" />
+
+        <Preference
+            android:title="About">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="https://sriharivishnu.wixsite.com/magnitudestudios" />
+        </Preference>
+
+    </com.corp.srihari.deca.PreferenceCategoryClass>
+
+    <com.corp.srihari.deca.PreferenceCategoryClass
+        android:title="User">
+        <Preference
+            android:key="clear"
+            android:title="Clear Wrong Answers"
+            android:selectable="true" />
+        <Preference
+            android:key="change_password"
+            android:title="Change Password"
+            android:selectable="true"
+            />
+        <Preference
+            android:key="signout"
+            android:title="Sign Out"
+            android:selectable="true"
+            />
+
+    </com.corp.srihari.deca.PreferenceCategoryClass>
+
+
+</PreferenceScreen>
